@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="company-header">
+        <h1 class="company-name">HOME RANGE FACTORY</h1>
+        <p class="tagline">A FREELANCE VENTURE FOR ALL HOUSEWIVES IN KERALA</p>
+    </header>
+
+    <main class="container">
+        <h2>Staff ID Card Generator</h2>
+
+        <div class="form-section">
+            <p>Please enter your details below:</p>
+            <form id="idCardForm">
+                <div class="form-group">
+                    <label for="photo">Upload Photo:</label>
+                    <input type="file" id="photo" accept="image/*" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <button type="submit" class="generate-btn">Generate ID Card</button>
+            </form>
+        </div>
+
+        <div class="card-section">
+            <p>Your ID Card preview:</p>
+            <div id="idCardDisplay" class="id-card">
+                <div class="card-header">
+                    <img src="" alt="Company Logo" class="company-logo">
+                    <p class="card-company-name">HOME RANGE FACTORY</p>
+                </div>
+                <div class="card-body">
+                    <img id="staffPhoto" src="" alt="Staff Photo" class="staff-photo">
+                    <div class="staff-details">
+                        <p><strong>Name:</strong> <span id="cardName"></span></p>
+                        <p><strong>Address:</strong> <span id="cardAddress"></span></p>
+                        <p><strong>Phone:</strong> <span id="cardPhone"></span></p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <p class="tagline-footer">A FREELANCE VENTURE FOR ALL HOUSEWIVES IN KERALA</p>
+                </div>
+            </div>
+            <button id="downloadBtn" class="download-btn" style="display:none;">Download ID Card</button>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

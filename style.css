@@ -1,0 +1,179 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+.company-header {
+    background-color: #4CAF50;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.company-name {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+.tagline {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/* Main Container */
+.container {
+    background-color: #fff;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Form Section */
+.form-section {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="tel"], input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.generate-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.generate-btn:hover {
+    background-color: #45a049;
+}
+
+/* ID Card Section */
+.card-section {
+    text-align: center;
+}
+
+.id-card {
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Mobile-friendly width */
+    margin: 20px auto;
+}
+
+.card-header {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.company-logo {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 5px;
+}
+
+.card-company-name {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #4CAF50;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.staff-photo {
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 20%;
+    border: 2px solid #4CAF50;
+}
+
+.staff-details {
+    text-align: center;
+}
+
+.staff-details p {
+    margin: 5px 0;
+}
+
+.card-footer {
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.tagline-footer {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.download-btn {
+    padding: 12px 25px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.download-btn:hover {
+    background-color: #0b7dda;
+}
